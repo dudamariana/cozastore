@@ -25,4 +25,12 @@ public class AppDbContext : IdentityDbContext
     public DbSet<Tamanho> Tamanhos { get; set; }
     public DbSet<Usuario> Usuarios { get; set; }
 
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+        AppDbSeed appDbSeed = new(builder);
+
+        
+    }
+
 }

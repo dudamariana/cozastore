@@ -13,7 +13,7 @@ namespace CozaStore.Models;
 
           [Required(ErrorMessage = "Informe a sigla")]
         [StringLength(30, ErrorMessage = "A sigla deve possuir no máximo 5 caracteres")]
-        public string CodigoHexa {get; set; }
+        public string Sigla {get; set; }
 
         [Required(ErrorMessage = "Informe o Nome")]
         [StringLength(30, ErrorMessage = "O nome deve possuir no máximo 30 caracteres")]
