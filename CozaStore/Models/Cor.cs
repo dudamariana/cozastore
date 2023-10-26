@@ -19,4 +19,5 @@ namespace CozaStore.Models;
            [Required(ErrorMessage = "Informe o Código da cor")]
         [StringLength(30, ErrorMessage = "O código da cor deve possuir no máximo 7 caracteres")]
         public string CodigoHexa {get; set; }
+          public ICollection<ProdutoEstoque> Estoques { get; set; }
     }

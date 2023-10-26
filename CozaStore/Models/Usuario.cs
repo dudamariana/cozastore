@@ -24,4 +24,7 @@ namespace CozaStore.Models;
 
     [StringLength(300)]
     public string Foto { get; set; }
+
+    public ICollection<ListaDesejo> Produtos { get; set; }
+    public ICollection<ProdutoAvaliacao> Avaliacoes { get; set; }
     }

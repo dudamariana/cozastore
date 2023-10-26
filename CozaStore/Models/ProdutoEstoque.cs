@@ -46,4 +46,6 @@ public class ProdutoEstoque
     [Required(ErrorMessage = "Informe a Qtde em Estoque")]
     public int QtdeEstoque { get; set; }
 
+    public ICollection<CarrinhoProduto> Carrinhos { get; set; }
+
 }
